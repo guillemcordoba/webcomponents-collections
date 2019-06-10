@@ -1,0 +1,60 @@
+{
+  "name": "pwa-starter-kit",
+  "version": "0.9.0",
+  "contributors": [
+    "The Polymer Authors"
+  ],
+  "license": "BSD-3-Clause",
+  "repository": "Polymer/pwa-starter-kit",
+  "scripts": {
+    "start:webpack": "tsc && concurrently \"tsc -w\" \"webpack-dev-server --open --mode development --hot\"",
+    "build": "tsc && webpack",
+    "build:static": "tsc && polymer build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "@appnest/lit-translate": "^1.1.14",
+    "@material/mwc-formfield": "^0.6.0",
+    "@material/mwc-icon": "^0.6.0",
+    "@webcomponents/webcomponentsjs": "^2.2.4",
+    "babel-plugin-transform-custom-element-classes": "^0.1.0",
+    "babel-plugin-transform-es2015-classes": "^6.24.1",
+    "babel-plugin-transform-regenerator": "6.26.0",
+    "babel-polyfill": "6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "concurrently": "^4.1.0",
+    "lit-element": "^2.1.0",
+    "lodash": "^4.17.11",
+    "ol": "^5.3.1",
+    "pwa-helpers": "^0.9.0",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@storybook/polymer": "^5.1.3",
+    "axe-core": "^3.0.0",
+    "babel-loader": "^8.0.4",
+    "chai": "^4.1.2",
+    "copy-webpack-plugin": "^4.6.0",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-rename": "^1.3.0",
+    "gulp-replace": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mocha": "^5.2.0",
+    "pixelmatch": "^4.0.2",
+    "polymer-cli": "^1.9.3",
+    "polymer-webpack-loader": "^2.0.3",
+    "polyserve": "^0.27.0",
+    "prpl-server": "^1.4.0",
+    "typescript": "^3.1.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.4",
+    "workbox-webpack-plugin": "^3.6.3"
+  }
+}
